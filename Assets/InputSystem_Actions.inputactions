@@ -50,6 +50,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "BetterJobButton3",
+                    "type": "Button",
+                    "id": "1417b04e-178b-437a-a9b7-ef0fbd602f15",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -105,6 +114,17 @@
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "BetterJobButton2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c9e45cb-01b7-4198-8587-d4a9d2505754",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BetterJobButton3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

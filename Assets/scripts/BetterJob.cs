@@ -23,6 +23,7 @@ public class BetterJob : MonoBehaviour
     public int minimumMoneyToUnlockUpgrade2;
     public int minimumMoneyToUnlockUpgrade3;
     public bool hasbetterjobbutton2;
+    public bool hasbetterjobbutton3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,7 +41,7 @@ public class BetterJob : MonoBehaviour
 
             hasUpgrade1 = true;
             betterJob1.interactable = false;
-
+            hasbetterjobbutton = false;
 
         }
 
@@ -73,7 +74,7 @@ public class BetterJob : MonoBehaviour
 
             hasUpgrade2 = true;
             betterJob2.interactable = false;
-
+            hasbetterjobbutton2 = false;
 
         }
 
@@ -94,14 +95,14 @@ public class BetterJob : MonoBehaviour
 
             hasUpgrade3 = true;
             betterJob3.interactable = false;
-
+            hasbetterjobbutton3 = false;    
 
         }
 
     }
     public void OnBetterJobButton3(InputValue context)
     {
-        hasbetterjobbutton2 = context.isPressed;
+        hasbetterjobbutton3 = context.isPressed;
         BuyUpgrade3();
     }
 
