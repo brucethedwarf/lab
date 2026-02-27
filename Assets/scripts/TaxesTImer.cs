@@ -1,14 +1,17 @@
-using UnityEngine;
-using UnityEngine.UI;
 using System;
 using TMPro;
-
-public class CountdownTimer : MonoBehaviour
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+public class TaxesTimer : MonoBehaviour
 {
-    public float countdownTime = 300f; // Initial time in seconds
-    public TextMeshProUGUI timerText; // Reference to a UI Text element
-
+    public float countdownTime = 700f;
+    public TextMeshProUGUI timerText;
+    public bool hasreset;
     private float currentTime;
+    public Button timerReset;
+    public bool resetTimer;
+    public int randomminimumMoneyToResetTimer;
 
     void Start()
     {
@@ -20,7 +23,7 @@ public class CountdownTimer : MonoBehaviour
         if (currentTime > 0)
         {
             currentTime -= Time.deltaTime;
-            // Use TimeSpan for easy formatting
+
             TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
             timerText.text = timeSpan.ToString(@"mm\:ss");
         }
@@ -28,13 +31,36 @@ public class CountdownTimer : MonoBehaviour
         {
             currentTime = 0;
             timerText.text = "00:00";
-            // Add game over logic here
+
         }
     }
 
-    // This method is called by the UI Button's OnClick() event
-    public void ResetTimer()
+
+
+
+
+    public void BuyResetTimer()
     {
-        currentTime = countdownTime; // Reset the current time to the starting value
+
+
+        randomminimumMoneyToResetTimer = UnityEngine.Random.Range(1, 999999999);
+
+        if (MoneyCounter.MoneyCount >= randomminimumMoneyToResetTimer)
+        {
+            MoneyCounter.MoneyCount -= randomminimumMoneyToResetTimer;
+            hasreset = true;
+            currentTime = countdownTime;
+        }
+
     }
+
+    public void OnResetTimer(InputValue context)
+    {
+        hasreset = context.isPressed;
+        BuyResetTimer();
+    }
+
+
+
 }
+
