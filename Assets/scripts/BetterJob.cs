@@ -17,7 +17,7 @@ public class BetterJob : MonoBehaviour
     public Button betterJob1;
     public bool hasbetterjobbutton;
     public Button betterJob2;
-    public Button betterJob3;   
+    public Button betterJob3;
     public int avarageBonusMoney2;
     public int avarageBonusMoney3;
     public int minimumMoneyToUnlockUpgrade2;
@@ -59,7 +59,7 @@ public class BetterJob : MonoBehaviour
 
 
 
-   
+
     public void OnBetterJobButton(InputValue context)
     {
         hasbetterjobbutton = context.isPressed;
@@ -95,7 +95,7 @@ public class BetterJob : MonoBehaviour
 
             hasUpgrade3 = true;
             betterJob3.interactable = false;
-            hasbetterjobbutton3 = false;    
+            hasbetterjobbutton3 = false;
 
         }
 
