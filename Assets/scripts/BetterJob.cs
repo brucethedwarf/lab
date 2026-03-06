@@ -53,8 +53,8 @@ public class BetterJob : MonoBehaviour
     private void UpdateText()
     {
         priceText.text = "Need " + minimumMoneyToUnlockUpgrade.ToString() + " Money";
-        priceText2.text = "Need " + minimumMoneyToUnlockUpgrade.ToString() + " Money";
-        priceText3.text = "Need " + minimumMoneyToUnlockUpgrade.ToString() + " Money";
+        priceText2.text = "Need " + minimumMoneyToUnlockUpgrade2.ToString() + " Money";
+        priceText3.text = "Need " + minimumMoneyToUnlockUpgrade3.ToString() + " Money";
     }
 
 
