@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MoneyCounter : MonoBehaviour
 {
-    public static int MoneyCount;
+    public static long  MoneyCount;
     public TMP_Text moneyDisplay;
 
     private void Update()
