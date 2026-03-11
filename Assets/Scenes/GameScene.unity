@@ -2284,6 +2284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c81c1fe8b4b0594c9fbbd9797b1b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoBack
+  hasloadmenu: 0
 --- !u!1 &1480671756
 GameObject:
   m_ObjectHideFlags: 0
