@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class TaxesTimer : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class TaxesTimer : MonoBehaviour
         {
             currentTime = 0;
             timerText.text = "00:00";
-
+            SceneManager.LoadScene("GameOver");
         }
     }
 
@@ -59,6 +60,15 @@ public class TaxesTimer : MonoBehaviour
         hasreset = context.isPressed;
         BuyResetTimer();
     }
+
+
+    public void LoadGameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
+
+
 
 
 

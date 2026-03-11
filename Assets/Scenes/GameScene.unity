@@ -2108,7 +2108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f983f25680409b84c8ae0e8266c1de9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
-  countdownTime: 700
+  countdownTime: 600
   timerText: {fileID: 922418640}
   hasreset: 1
   timerReset: {fileID: 1014058186}
