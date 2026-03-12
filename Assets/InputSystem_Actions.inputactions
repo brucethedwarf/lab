@@ -140,7 +140,7 @@
                 {
                     "name": "",
                     "id": "284210f3-5a38-4ce7-9c73-4a283ab7133f",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<Gamepad>/start",
                     "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
