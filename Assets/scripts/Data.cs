@@ -1,29 +1,55 @@
+using System;
+using UnityEngine;
+
+using System;
 using UnityEngine;
 
 public class Data : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public int BetterJob1 = 1;
-    public int betterjob2 = 2;
-    public int betterjob3 = 3;
-
-
-
-    public class PlayerData
+    public int betterJob1 = 0;
+    public int betterJob2 = 0;
+    public int betterJob3 = 0;
+    public long money;
+    
+    private void Awake()
     {
-        public int betterjob1;
-        public int betterjob2;
-        public int betterjob3;
+        LoadPlayer();
+    }
+
+    public void savePlayer ()
+    {
+        SaveData.SavePlayer(this);
+    }
+
+    public void LoadPlayer ()
+    {
+        PlayerData data = SaveData.LoadPlayer();
+
+        betterJob1 = data.betterJob1;
+        betterJob2 = data.betterJob2;
+        betterJob3 = data.betterJob3;
+        money = data.money;
+
         
-        public int money;
+
 
     }
+}
 
-    public Data(Data data)
+[Serializable]
+public class PlayerData
+{
+    public int betterJob1;
+    public int betterJob2;
+    public int betterJob3;
+    public long money;
+
+    public PlayerData(Data data)
     {
-        BetterJob1 = data.BetterJob1;
-        betterjob2 = data.betterjob2; 
-        betterjob3 = data.betterjob3;
+        betterJob1 = data.betterJob1;
+        betterJob2 = data.betterJob2;
+        betterJob3 = data.betterJob3;
+        money = data.money;
     }
-
+   
 }

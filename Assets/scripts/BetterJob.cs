@@ -24,9 +24,30 @@ public class BetterJob : MonoBehaviour
     public int minimumMoneyToUnlockUpgrade3;
     public bool hasbetterjobbutton2;
     public bool hasbetterjobbutton3;
+    public Data data;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        hasUpgrade1 = (data.betterJob1 == 0) ? false:true ;
+        hasUpgrade2 = (data.betterJob2 == 0) ? false:true ;
+        hasUpgrade3 = (data.betterJob3 == 0) ? false:true ;
+
+        if (hasUpgrade1)
+        {
+            betterJob1.interactable = false;
+            hasbetterjobbutton = false;
+        }
+
+        if (hasUpgrade2)
+        {
+            betterJob2.interactable = false;
+            hasbetterjobbutton2 = false;
+        }
+        if (hasUpgrade3)
+        {
+            betterJob3.interactable = false;
+            hasbetterjobbutton3 = false;
+        }
         paycheck = PayCheck.instance;
         UpdateText();
 
@@ -42,6 +63,7 @@ public class BetterJob : MonoBehaviour
             hasUpgrade1 = true;
             betterJob1.interactable = false;
             hasbetterjobbutton = false;
+            data.betterJob1 = 1;
 
         }
 
@@ -75,7 +97,7 @@ public class BetterJob : MonoBehaviour
             hasUpgrade2 = true;
             betterJob2.interactable = false;
             hasbetterjobbutton2 = false;
-
+            data.betterJob2 = 1;
         }
 
     }
@@ -96,7 +118,7 @@ public class BetterJob : MonoBehaviour
             hasUpgrade3 = true;
             betterJob3.interactable = false;
             hasbetterjobbutton3 = false;
-
+            data.betterJob3 = 1;
         }
 
     }
