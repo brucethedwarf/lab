@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SAVE
+  m_text: CLOCK OUT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2663,7 +2663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27be5e3952561fb4da990e498e644ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BetterJob
-  minimumMoneyToUnlockUpgrade: 5
+  minimumMoneyToUnlockUpgrade: 800
   priceText: {fileID: 1807061000}
   priceText2: {fileID: 772920513}
   priceText3: {fileID: 913817765}
@@ -2672,7 +2672,7 @@ MonoBehaviour:
   hasUpgrade3: 0
   avarageBonusMoney: 49
   betterJob1: {fileID: 1938185962}
-  hasbetterjobbutton: 1
+  hasbetterjobbutton: 0
   betterJob2: {fileID: 1077884660}
   betterJob3: {fileID: 506709290}
   avarageBonusMoney2: 2401
