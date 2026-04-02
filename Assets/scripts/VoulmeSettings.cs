@@ -4,14 +4,29 @@ using UnityEngine.UI;
 
 public class VoulmeSettings : MonoBehaviour
 {
-    [SerializeField] private AudioMixer myMixer;
-    [SerializeField] private Slider BackgroundSlider;
+    public AudioMixer myMixer;
+    public Slider backgroundSlider;
+    public Slider masterSlider;
 
 
-    public void SetBackgroundVolume()
+    private void Start()
     {
-        float voulme = BackgroundSlider.value;
+        backgroundSlider.value = PlayerPrefs.GetFloat("Background", 1);
+        masterSlider.value = PlayerPrefs.GetFloat("Master", 1);
+        myMixer.SetFloat("Background", PlayerPrefs.GetFloat("Background", 1));
+        myMixer.SetFloat("Master", PlayerPrefs.GetFloat("Master", 1));
+    }
+
+    public void SetBackgroundVolume(float voulme)
+    {
         myMixer.SetFloat("Background", voulme);
+        PlayerPrefs.SetFloat("Background", voulme);
+    }
+
+    public void SetMasterVolume(float voulme)
+    {
+        myMixer.SetFloat("Master", voulme);
+        PlayerPrefs.SetFloat("Master", voulme);
     }
 
 }
