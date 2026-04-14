@@ -1,4 +1,5 @@
 using System.IO;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using static System.Net.Mime.MediaTypeNames;
@@ -32,8 +33,8 @@ public static class SaveData
             return data;
         } else
         {
-            Debug.LogError("Save file not found in" +  path);
-            return null;
+            PlayerData data = new PlayerData();
+            return data;
         }
     }
 }

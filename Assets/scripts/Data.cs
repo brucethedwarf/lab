@@ -51,5 +51,13 @@ public class PlayerData
         betterJob3 = data.betterJob3;
         money = data.money;
     }
-   
+
+    public PlayerData()
+    {
+        betterJob1 = 0;
+        betterJob2 = 0;
+        betterJob3 = 0;
+        money = 0;
+    }
+
 }
