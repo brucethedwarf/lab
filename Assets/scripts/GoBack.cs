@@ -1,14 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+// i hate it here
 public class GoBack : MonoBehaviour
 {
+    
     public bool hasloadmenu;
-
+    private Data data;
     public void LoadMenu()
 
     {
-
+        data.SavePlayer();
         SceneManager.LoadScene("Menu");
 
     }
@@ -20,7 +22,11 @@ public class GoBack : MonoBehaviour
         LoadMenu();
     }
 
-
+    private void Start()
+    {
+        data = GetComponent<Data>();
+        
+    }
 
 
 

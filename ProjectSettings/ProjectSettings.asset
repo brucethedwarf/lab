@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: GCTC
-  productName: Get A Job
+  productName: Get A Job Ya Bum
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -448,6 +448,9 @@ PlayerSettings:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
     m_DynamicBatching: 0
+  - m_BuildTarget: Windows Store Apps
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -760,14 +763,47 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: lab
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: GCTC
+  metroCertificateIssuer: GCTC
+  metroCertificateNotAfter: 80fa2e79f9efdd01
   metroApplicationDescription: lab
-  wsaImages: {}
-  metroTileShortName: lab
+  wsaImages:
+    65636: Assets/logo-50.png
+    65736: Assets/logo-100.png
+    131272: Assets/splash-1240-600.png
+    2031632: 
+    2031640: Assets/logo-24.jpg
+    2031648: 
+    2031664: 
+    2031716: 
+    2031741: 
+    2031766: 
+    2031816: Assets/logo-88.jpg
+    2031872: 
+    2032016: Assets/logo-176.jpg
+    2097252: 
+    2097277: 
+    2097302: 
+    2097352: Assets/logo-142.png
+    2097552: 
+    2162788: Assets/logo-150.jpg
+    2162813: 
+    2162838: 
+    2162888: Assets/logo-300.jpg
+    2163088: 
+    2228324: 
+    2228349: 
+    2228374: 
+    2228424: 
+    2228624: 
+    2293860: 
+    2293885: 
+    2293910: 
+    2293960: Assets/logo-620-300.png
+    2294160: 
+  metroTileShortName: 'Get A Job Ya Bum '
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

@@ -16,7 +16,7 @@ public class Data : MonoBehaviour
         LoadPlayer();
     }
 
-    public void savePlayer ()
+    public void SavePlayer ()
     {
         SaveData.SavePlayer(this);
     }
