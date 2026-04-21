@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 // i hate it here
-public class GoBack : MonoBehaviour
+public class LeavMenu : MonoBehaviour
 {
     
     public bool hasloadmenu;
